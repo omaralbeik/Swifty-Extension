@@ -1,0 +1,18 @@
+#if canImport(Foundation) && !os(Linux)
+import Foundation
+
+// MARK: - Properties
+
+public extension NSObject{
+    /// SwifterSwift: class name.
+    class var className: String {
+        let array = NSStringFromClass(self).components(separatedBy: ".")
+        return array.last ?? ""
+    }
+    
+    /// SwifterSwift: class name.
+    var className: String {
+        let array = NSStringFromClass(type(of: self)).components(separatedBy: ".")
+        return array.last ?? ""
+    }
+}
