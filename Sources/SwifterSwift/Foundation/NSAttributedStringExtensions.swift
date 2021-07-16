@@ -134,6 +134,45 @@ public extension NSAttributedString {
     }
 }
 
+// MARK: - Initializers
+
+public extension NSAttributedString {
+    #if os(iOS) || os(tvOS)
+    /// SwifterSwift: Creates an attributed string with an image centered by a font.
+    /// - Parameters:
+    ///   - image: The image to create attributed string with (the image will not be scaled).
+    ///   - font: The font by which the image should be centered.
+    ///
+    /// https://stackoverflow.com/a/45161058
+    convenience init(image: UIImage, font: UIFont) {
+        let icon = NSTextAttachment()
+        icon.bounds = CGRect(x: 0, y: (font.capHeight - image.size.height).rounded() / 2,
+                             width: image.size.width, height: image.size.height)
+        icon.image = image
+
+        self.init(attachment: icon)
+    }
+    #endif
+    
+    #if os(macOS)
+    /// SwifterSwift: Creates an attributed string with an image centered by a font.
+    /// - Parameters:
+    ///   - image: The image to create attributed string with (the image will not be scaled).
+    ///   - font: The font by which the image should be centered.
+    ///
+    /// https://stackoverflow.com/a/45161058
+    @available(macOS 10.11, *)
+    convenience init(image: NSImage, font: NSFont) {
+        let icon = NSTextAttachment()
+        icon.bounds = CGRect(x: 0, y: (font.capHeight - image.size.height).rounded() / 2,
+                             width: image.size.width, height: image.size.height)
+        icon.image = image
+
+        self.init(attachment: icon)
+    }
+    #endif
+}
+
 // MARK: - Operators
 
 public extension NSAttributedString {

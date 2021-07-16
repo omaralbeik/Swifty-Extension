@@ -13,6 +13,8 @@ The changelog for **SwifterSwift**. Also see the [releases](https://github.com/S
   - Rename `borderColor`, `borderWidth` and `cornerRadius` to `layerBorderColor`, `layerBorderWidth`, and `layerCornerRadius` to avoid naming collisions with subclasses properties defined in other modules e.g. UIKit. [#972](https://github.com/SwifterSwift/SwifterSwift/pull/972) by [Jayxiang](https://github.com/Jayxiang)
 
 ### Added
+- **NSAttributedString**
+  - Added `init(image:font:)` initializer to create an attributed string with an image centered by a font. [#952](https://github.com/SwifterSwift/SwifterSwift/pull/952) by [viktart](https://github.com/viktart)
 - **SCN3Vector**
   - Added `normalized` method, and basic division functions (`SCNVector3 / scalar`, and `SCNVector3 /= scalar`. [#908](https://github.com/SwifterSwift/SwifterSwift/pull/908) by [thisIsTheFoxe](https://github.com/thisisthefoxe)
 - **Dictionary**

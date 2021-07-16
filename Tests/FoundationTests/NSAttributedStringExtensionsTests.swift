@@ -306,6 +306,43 @@ final class NSAttributedStringExtensionsTests: XCTestCase {
         #endif
     }
 
+    // MARK: - Initializer
+    
+    #if canImport(UIKit)
+    func testInitImageUIKit() {
+        let font = UIFont.systemFont(ofSize: 19)
+        let attrString = NSMutableAttributedString(string: "Hello Bitcoin!", attributes: [.font: font])
+        let sizeBefore = attrString.size()
+        let bundle = Bundle(for: NSAttributedStringExtensionsTests.self)
+        let image = UIImage(named: "TestImageInitAttributedString", in: bundle, compatibleWith: nil)!
+        let imageString = NSAttributedString(image: image, font: font)
+        attrString.insert(imageString, at: 6)
+        let sizeAfter = attrString.size()
+        
+        let calculatedSize = CGSize(width: sizeBefore.width + image.size.width,
+                                    height: max(sizeBefore.height, image.size.height))
+        XCTAssertEqual(calculatedSize, sizeAfter)
+    }
+    #endif
+    
+    #if canImport(AppKit)
+    @available(macOS 10.11, *)
+    func testInitImageAppKit() {
+        let font = NSFont.systemFont(ofSize: 19)
+        let attrString = NSMutableAttributedString(string: "Hello Bitcoin!", attributes: [.font: font])
+        let sizeBefore = attrString.size()
+        let bundle = Bundle(for: NSAttributedStringExtensionsTests.self)
+        let image = bundle.image(forResource: "TestImageInitAttributedString")!
+        let imageString = NSAttributedString(image: image, font: font)
+        attrString.insert(imageString, at: 6)
+        let sizeAfter = attrString.size()
+        
+        let calculatedSize = CGSize(width: sizeBefore.width + image.size.width,
+                                    height: max(sizeBefore.height, image.size.height))
+        XCTAssertEqual(calculatedSize, sizeAfter)
+    }
+    #endif
+    
     // MARK: - Operators
 
     func testOperators() {

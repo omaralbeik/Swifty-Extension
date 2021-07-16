@@ -362,6 +362,9 @@
 		58253513259CF23B00407B78 /* MeasurementExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58253511259CF23B00407B78 /* MeasurementExtensions.swift */; };
 		58253514259CF23B00407B78 /* MeasurementExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58253511259CF23B00407B78 /* MeasurementExtensions.swift */; };
 		58253515259CF23B00407B78 /* MeasurementExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58253511259CF23B00407B78 /* MeasurementExtensions.swift */; };
+		59C80637262E32E400B8649A /* TestImageInitAttributedString.png in Resources */ = {isa = PBXBuildFile; fileRef = 59C80636262E32E400B8649A /* TestImageInitAttributedString.png */; };
+		59C80638262E32E400B8649A /* TestImageInitAttributedString.png in Resources */ = {isa = PBXBuildFile; fileRef = 59C80636262E32E400B8649A /* TestImageInitAttributedString.png */; };
+		59C80639262E32E400B8649A /* TestImageInitAttributedString.png in Resources */ = {isa = PBXBuildFile; fileRef = 59C80636262E32E400B8649A /* TestImageInitAttributedString.png */; };
 		5C88FBEC234CC1280065A942 /* NSColorExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C88FBEB234CC1280065A942 /* NSColorExtensionsTests.swift */; };
 		664CB96D2171863B00FC87B4 /* BidirectionalCollectionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664CB96C2171863B00FC87B4 /* BidirectionalCollectionExtensions.swift */; };
 		664CB96E2171863B00FC87B4 /* BidirectionalCollectionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664CB96C2171863B00FC87B4 /* BidirectionalCollectionExtensions.swift */; };
@@ -798,6 +801,7 @@
 		42F53FEB2039C5AC0070DC11 /* UIStackViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackViewExtensions.swift; sourceTree = "<group>"; };
 		42F53FEF2039C7140070DC11 /* UIStackViewExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackViewExtensionsTests.swift; sourceTree = "<group>"; };
 		58253511259CF23B00407B78 /* MeasurementExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeasurementExtensions.swift; sourceTree = "<group>"; };
+		59C80636262E32E400B8649A /* TestImageInitAttributedString.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TestImageInitAttributedString.png; sourceTree = "<group>"; };
 		5C88FBEB234CC1280065A942 /* NSColorExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSColorExtensionsTests.swift; sourceTree = "<group>"; };
 		5E36CB6424AC9909007727DA /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
 		664CB96C2171863B00FC87B4 /* BidirectionalCollectionExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BidirectionalCollectionExtensions.swift; sourceTree = "<group>"; };
@@ -1456,6 +1460,7 @@
 				CAC5EBC52125270A00AB27EC /* big_buck_bunny_720p_1mb.mp4 */,
 				CAC5EBC22125270A00AB27EC /* test.json */,
 				CAC5EBBF2125270A00AB27EC /* TestImage.png */,
+				59C80636262E32E400B8649A /* TestImageInitAttributedString.png */,
 				CAC5EBC02125270A00AB27EC /* TestStoryboard.storyboard */,
 				F88C491824AF73A400BA0503 /* TestStoryboard-tvOS.storyboard */,
 				CAC5EBC12125270A00AB27EC /* UICollectionViewCell.xib */,
@@ -1791,6 +1796,7 @@
 				CAC5EBC72125270A00AB27EC /* TestStoryboard.storyboard in Resources */,
 				CAC5EBCA2125270A00AB27EC /* UITableViewCell.xib in Resources */,
 				CAC5EBC92125270A00AB27EC /* test.json in Resources */,
+				59C80637262E32E400B8649A /* TestImageInitAttributedString.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1800,6 +1806,7 @@
 			files = (
 				CAC5EBD02125273100AB27EC /* TestImage.png in Resources */,
 				CAC5EBCE2125272A00AB27EC /* test.json in Resources */,
+				59C80638262E32E400B8649A /* TestImageInitAttributedString.png in Resources */,
 				8D50E52224D0D76400972E2D /* UIImageViewTvOS.xib in Resources */,
 				CAC5EBCD2125272400AB27EC /* big_buck_bunny_720p_1mb.mp4 in Resources */,
 				F88C491924AF73A400BA0503 /* TestStoryboard-tvOS.storyboard in Resources */,
@@ -1812,6 +1819,7 @@
 			files = (
 				CAC5EBCF2125272A00AB27EC /* test.json in Resources */,
 				CAC5EBD12125273100AB27EC /* TestImage.png in Resources */,
+				59C80639262E32E400B8649A /* TestImageInitAttributedString.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
