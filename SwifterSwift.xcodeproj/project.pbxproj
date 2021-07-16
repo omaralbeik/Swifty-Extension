@@ -363,6 +363,13 @@
 		58253514259CF23B00407B78 /* MeasurementExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58253511259CF23B00407B78 /* MeasurementExtensions.swift */; };
 		58253515259CF23B00407B78 /* MeasurementExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58253511259CF23B00407B78 /* MeasurementExtensions.swift */; };
 		5C88FBEC234CC1280065A942 /* NSColorExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C88FBEB234CC1280065A942 /* NSColorExtensionsTests.swift */; };
+		62F22AA1267D998D006CC4FD /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F22AA0267D998D006CC4FD /* ViewExtensions.swift */; };
+		62F22AA2267D998D006CC4FD /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F22AA0267D998D006CC4FD /* ViewExtensions.swift */; };
+		62F22AA3267D998D006CC4FD /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F22AA0267D998D006CC4FD /* ViewExtensions.swift */; };
+		62F22AA4267D998D006CC4FD /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F22AA0267D998D006CC4FD /* ViewExtensions.swift */; };
+		62F22AAD267D9AE7006CC4FD /* ViewExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F22AA6267D9A96006CC4FD /* ViewExtensionTests.swift */; };
+		62F22AAE267D9AE7006CC4FD /* ViewExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F22AA6267D9A96006CC4FD /* ViewExtensionTests.swift */; };
+		62F22AAF267D9AE7006CC4FD /* ViewExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F22AA6267D9A96006CC4FD /* ViewExtensionTests.swift */; };
 		664CB96D2171863B00FC87B4 /* BidirectionalCollectionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664CB96C2171863B00FC87B4 /* BidirectionalCollectionExtensions.swift */; };
 		664CB96E2171863B00FC87B4 /* BidirectionalCollectionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664CB96C2171863B00FC87B4 /* BidirectionalCollectionExtensions.swift */; };
 		664CB96F2171863B00FC87B4 /* BidirectionalCollectionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664CB96C2171863B00FC87B4 /* BidirectionalCollectionExtensions.swift */; };
@@ -800,6 +807,8 @@
 		58253511259CF23B00407B78 /* MeasurementExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeasurementExtensions.swift; sourceTree = "<group>"; };
 		5C88FBEB234CC1280065A942 /* NSColorExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSColorExtensionsTests.swift; sourceTree = "<group>"; };
 		5E36CB6424AC9909007727DA /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
+		62F22AA0267D998D006CC4FD /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
+		62F22AA6267D9A96006CC4FD /* ViewExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensionTests.swift; sourceTree = "<group>"; };
 		664CB96C2171863B00FC87B4 /* BidirectionalCollectionExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BidirectionalCollectionExtensions.swift; sourceTree = "<group>"; };
 		664CB971217186E900FC87B4 /* BidirectionalCollectionExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BidirectionalCollectionExtensionsTests.swift; sourceTree = "<group>"; };
 		664CB9752171899800FC87B4 /* BinaryFloatingPointExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryFloatingPointExtensions.swift; sourceTree = "<group>"; };
@@ -1062,6 +1071,7 @@
 		07898B941F27904200558C97 /* SwifterSwift */ = {
 			isa = PBXGroup;
 			children = (
+				62F22A9F267D9977006CC4FD /* SwiftUI */,
 				07B7F15C1F5EB41600E6F910 /* AppKit */,
 				E5E5EB382350EE9A00B04C42 /* CoreAnimation */,
 				07D8960D1F5ED85400FC894D /* CoreGraphics */,
@@ -1154,6 +1164,7 @@
 		07C50CF21F5EAF7B00F46E5A /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				62F22AA5267D9A7C006CC4FD /* SwiftUITests */,
 				07C50CCD1F5EAF2700F46E5A /* Info.plist */,
 				07C50D241F5EB03200F46E5A /* AppKitTests */,
 				E5E5EB3B2350F39E00B04C42 /* CoreAnimationTests */,
@@ -1307,6 +1318,22 @@
 				0DAEBCE224B0079700F61684 /* HKActivitySummaryExtensionsTests.swift */,
 			);
 			path = HealthKitTests;
+			sourceTree = "<group>";
+		};
+		62F22A9F267D9977006CC4FD /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				62F22AA0267D998D006CC4FD /* ViewExtensions.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		62F22AA5267D9A7C006CC4FD /* SwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				62F22AA6267D9A96006CC4FD /* ViewExtensionTests.swift */,
+			);
+			path = SwiftUITests;
 			sourceTree = "<group>";
 		};
 		664CB981217243BA00FC87B4 /* Dispatch */ = {
@@ -1997,6 +2024,7 @@
 				07B7F1A41F5EB42000E6F910 /* UITextFieldExtensions.swift in Sources */,
 				07B7F20B1F5EB43C00E6F910 /* ArrayExtensions.swift in Sources */,
 				D951E8AA23D04DBE00F2CD0B /* DecodableExtensions.swift in Sources */,
+				62F22AA1267D998D006CC4FD /* ViewExtensions.swift in Sources */,
 				07B7F1A01F5EB42000E6F910 /* UIStoryboardExtensions.swift in Sources */,
 				07B7F19A1F5EB42000E6F910 /* UINavigationBarExtensions.swift in Sources */,
 				07B7F1941F5EB42000E6F910 /* UIButtonExtensions.swift in Sources */,
@@ -2069,6 +2097,7 @@
 				664CB984217243D200FC87B4 /* DispatchQueueExtensions.swift in Sources */,
 				9D806A612258D503008E500A /* SCNPlaneExtensions.swift in Sources */,
 				9D9784DC1FCAE42600D988E7 /* StringProtocolExtensions.swift in Sources */,
+				62F22AA2267D998D006CC4FD /* ViewExtensions.swift in Sources */,
 				07B7F1FA1F5EB43C00E6F910 /* BoolExtensions.swift in Sources */,
 				B2A0DAB72336D5A6002B0BC5 /* StdlibDeprecated.swift in Sources */,
 				A9AEB78620283ACC0021AACF /* FileManagerExtensions.swift in Sources */,
@@ -2207,6 +2236,7 @@
 				58253514259CF23B00407B78 /* MeasurementExtensions.swift in Sources */,
 				07B7F1CB1F5EB42200E6F910 /* UISliderExtensions.swift in Sources */,
 				B2A0DAB82336D5A6002B0BC5 /* StdlibDeprecated.swift in Sources */,
+				62F22AA3267D998D006CC4FD /* ViewExtensions.swift in Sources */,
 				07B7F1BF1F5EB42200E6F910 /* UIBarButtonItemExtensions.swift in Sources */,
 				07B7F1CE1F5EB42200E6F910 /* UITabBarExtensions.swift in Sources */,
 				F8A710EB23BF3F7400112DAD /* EdgeInsetsExtensions.swift in Sources */,
@@ -2259,6 +2289,7 @@
 				07B7F1D81F5EB43B00E6F910 /* CollectionExtensions.swift in Sources */,
 				07B7F1DD1F5EB43B00E6F910 /* FloatExtensions.swift in Sources */,
 				70269A2D1FB478D100C6C2D0 /* CalendarExtensions.swift in Sources */,
+				62F22AA4267D998D006CC4FD /* ViewExtensions.swift in Sources */,
 				07B7F1D61F5EB43B00E6F910 /* BoolExtensions.swift in Sources */,
 				07B7F1DE1F5EB43B00E6F910 /* FloatingPointExtensions.swift in Sources */,
 				07B7F1DB1F5EB43B00E6F910 /* DictionaryExtensions.swift in Sources */,
@@ -2339,6 +2370,7 @@
 				0DAEBCE324B0079700F61684 /* HKActivitySummaryExtensionsTests.swift in Sources */,
 				077BA09E1F6BEA4900D9C4AC /* URLRequestExtensionsTests.swift in Sources */,
 				9D806A932258FCCE008E500A /* SCNConeExtensionsTests.swift in Sources */,
+				62F22AAD267D9AE7006CC4FD /* ViewExtensionTests.swift in Sources */,
 				D9F36CF623521F440057258F /* MKMapViewTests.swift in Sources */,
 				07C50D2E1F5EB04600F46E5A /* UICollectionViewExtensionsTests.swift in Sources */,
 				664CB98A21724A9100FC87B4 /* DispatchQueueExtensionsTests.swift in Sources */,
@@ -2435,6 +2467,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62F22AAE267D9AE7006CC4FD /* ViewExtensionTests.swift in Sources */,
 				9D806A9C2258FE9D008E500A /* SCNShapeExtensionsTests.swift in Sources */,
 				07C50D481F5EB04700F46E5A /* UILabelExtensionsTests.swift in Sources */,
 				9D806A942258FCCE008E500A /* SCNConeExtensionsTests.swift in Sources */,
@@ -2536,6 +2569,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62F22AAF267D9AE7006CC4FD /* ViewExtensionTests.swift in Sources */,
 				B2A0DAC72336DCE5002B0BC5 /* MutableCollectionTests.swift in Sources */,
 				734307FE2108C85E0029CD16 /* CGVectorExtensionsTests.swift in Sources */,
 				9D49148B1F8515D100F3868F /* NSPredicateExtensionsTests.swift in Sources */,
